@@ -4,6 +4,10 @@
  */
 package paquete02;
 
+
+
+
+
 public class Ejemplo06 {
 
     public static void main(String[] args) {
@@ -15,7 +19,21 @@ public class Ejemplo06 {
         // [0][0]
         // [1][1]
         // hasta el final
-
+        for (int i = 0; i < valor1.length; i++) {
+            System.out.printf("Valor es: %s\n",obtenerSuma(valor1[i],valor2[i]));
+        }
+        /*for (int i = 0; i < valor1.length; i++) {
+            int num1 = valor1[i];
+            int num2 = valor2[i];
+            System.out.printf("Valor es: %s\n",obtenerSuma(num1,num2));
+        }
+        for (int i = 0; i < valor1.length; i++) {
+            int num1 = valor1[i];
+            int num2 = valor2[i];
+            int suma = obtenerSuma(num1,num2);
+            System.out.printf("Valor es: %s\n",suma);
+        }*/
+        
     }
 
     public static int obtenerSuma(int a, int b) {
